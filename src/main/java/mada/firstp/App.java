@@ -37,7 +37,9 @@ public class App extends Application{
         box.getChildren().addAll(label);
         box.setAlignment(Pos.CENTER);
         Scene root = new Scene(box);
+    
         primaryStage.setScene(root);
+        primaryStage.setResizable(false);
         primaryStage.show();
         //Le  thread principale est fait pour l'interface  et  du coup on a créé un second thread pour récuperer les donner à tout moment
         Runnable myRunnable = new Runnable() {
